@@ -52,7 +52,7 @@ df = df.drop_duplicates(subset=['Player', 'Rk'])
 df = df.drop(26) #removes stray junk row 
 
 # Save the cleaned data to a CSV file
-df.to_csv("nba_2021_per_game.csv", index=False)
+df.to_csv(f"nba_{year}_{stat_type}.csv", index=False)
 
 # Print the first 5 rows of the DataFrame}
 print(df.head())
