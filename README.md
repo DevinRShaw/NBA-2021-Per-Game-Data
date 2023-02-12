@@ -9,7 +9,7 @@ The following libraries are used in this script:
 - `pandas`
 
 ## Retrieving Data
-The data is retrieved from the URL `https://www.basketball-reference.com/leagues/NBA_2021_per_game.html` using the `requests` library. The `BeautifulSoup` library is then used to parse the HTML data and extract the required information.
+The data is retrieved from the URL `https://www.basketball-reference.com/leagues/NBA_{year}_{stat_type}.html` using the `requests` library. The `BeautifulSoup` library is then used to parse the HTML data and extract the required information.
 
 ## Data Cleaning
 A list of stat names is created from the header of the HTML table and used as columns for the Pandas dataframe. The player data is then extracted from the HTML table and added as rows to the dataframe. Duplicate rows are removed using the `drop_duplicates` method, which keeps only the first occurrence of each row.
