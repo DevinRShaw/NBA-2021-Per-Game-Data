@@ -2,8 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-
-url = "https://www.basketball-reference.com/leagues/NBA_2021_per_game.html"
+input("Year of per game statistics: "
+url = f"https://www.basketball-reference.com/leagues/NBA_{year}_per_game.html"
 
 response = requests.get(url)
 soup = BeautifulSoup(response.text, "html.parser")
