@@ -7,7 +7,7 @@ year = input("Year of per game statistics: ")
 types = ['totals', 'per_game', 'per_minute', 'per_poss', 'advanced','play-by-play', 'shooting', 'adj_shooting']
 x = False
 while x == False:
-  stat_type = input("Choose type from ['totals', 'per_game', 'per_minute', 'per_poss', 'advanced','play-by-play', 'shooting', 'adj_shooting']")
+  stat_type = input("Choose type from ['totals', 'per_game', 'per_minute', 'per_poss', 'advanced','play-by-play', 'shooting', 'adj_shooting']: ")
   if stat_type in types:
     x = True
 
