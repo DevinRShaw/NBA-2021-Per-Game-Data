@@ -1,6 +1,6 @@
 # NBA Fast Data Creation
 
-This script takes user input on year and stat type then retrieves NBA data from the website [basketball-reference.com](https://www.basketball-reference.com/leagues/NBA_{year}_{stat_type}.html) and saves it as a cleaned csv file. The data includes player statistics such as player name, rank, games played, points per game, etc. Meant to allow for faster workflow of analyzing NBA datasets.
+Although the data aquired in this library is accesable through means of a browser GUI, using input and webscraping can reduce time needed to generate datasets on the fly. This script takes user input on year and stat type then retrieves NBA data from the website [basketball-reference.com](https://www.basketball-reference.com/leagues/NBA_{year}_{stat_type}.html) and saves it as a cleaned csv file. The data includes player statistics such as player name, rank, games played, points per game, etc. Meant to allow for faster workflow of analyzing NBA datasets.
 
 ## Dependencies
 The following libraries are used in this script:
