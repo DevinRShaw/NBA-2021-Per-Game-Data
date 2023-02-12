@@ -2,8 +2,18 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-input("Year of per game statistics: "
-url = f"https://www.basketball-reference.com/leagues/NBA_{year}_per_game.html"
+year = input("Year of per game statistics: ")
+
+types = ['totals', 'per_game', 'per_minute', 'per_poss', 'advanced','play-by-play', 'shooting', 'adj_shooting']
+x = False
+while x == False:
+  stat_type = input("Choose type from ['totals', 'per_game', 'per_minute', 'per_poss', 'advanced','play-by-play', 'shooting', 'adj_shooting']")
+  if stat_type in types:
+    x = True
+
+
+
+url = f"https://www.basketball-reference.com/leagues/NBA_{year}_{stat_type}.html"
 
 response = requests.get(url)
 soup = BeautifulSoup(response.text, "html.parser")
